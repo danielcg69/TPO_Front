@@ -1,0 +1,31 @@
+
+
+header {
+    position: fixed;
+    background-color: rgb(139, 18, 18);
+    height: 10%;
+    width: 100%;
+    color: white;
+    
+}
+
+h3 {
+    font-family: 'Archivo Narrow', sans-serif;
+    text-align:  center;
+    background-color: rgb(139, 18, 18);
+    color: white
+}
+
+nav {
+    padding: 5px;
+    background-color: rgb(139, 18, 18);
+    text-align: right;
+}
+
+body {
+    background-image: url(/assets/Images/cinema_960_720.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: 100% 100%;
+  }
+
