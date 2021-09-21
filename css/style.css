@@ -1,19 +1,60 @@
-
+*{
+    background-color: black;
+    color: white;
+    margin: 8;
+}
 
 header {
     position: fixed;
+    left: 0px;
+    top:0px;
     background-color: rgb(139, 18, 18);
-    height: 10%;
+    height: 75px;
     width: 100%;
     color: white;
     
 }
 
-h3 {
+h2 {
     font-family: 'Archivo Narrow', sans-serif;
     text-align:  center;
     background-color: rgb(139, 18, 18);
     color: white
+}
+
+body > header > a > img {
+    background-color: rgb(139, 18, 18);
+    transition: .5s;
+}
+
+body > header > a > img:hover{
+    transform:scale(1.15);
+    
+}
+body > a > img{
+    border-style: dotted;
+    border-color: cornsilk;
+    margin-left: 18%;
+    margin-top: 8%;
+    width: 60%;
+    height: 80%;
+    transition: 1s;
+}    
+    
+body > a > img:hover{
+        transform: scale(1.1);
+        
+        
+      }
+
+ 
+body > header > a {
+    position: fixed;
+    width: 70px;
+    height: 50px;
+    top: 10px;
+    left: 10px;
+    
 }
 
 nav {
@@ -22,10 +63,22 @@ nav {
     text-align: right;
 }
 
-body {
-    background-image: url(/assets/Images/cinema_960_720.png);
-    background-repeat: no-repeat;
-    background-attachment: fixed; 
-    background-size: 100% 100%;
-  }
+nav > a {
+    color: hsl(0, 96%, 30%);
+    padding: 5px;
+    background-color: black ;
+    border-radius: 5px;
+}
 
+
+footer {
+    color:white;
+    text-align: center;
+    background-color: rgb(139, 18, 18);
+    padding: 5px;
+    margin: 0px;
+    left: 0px;
+    right: 0px;
+    
+    
+}
