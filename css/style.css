@@ -9,7 +9,7 @@ header {
     left: 0px;
     top:0px;
     background-color: rgb(139, 18, 18);
-    height: 75px;
+    height: 75px ;
     width: 100%;
     color: white;
     
@@ -19,12 +19,14 @@ h2 {
     font-family: 'Archivo Narrow', sans-serif;
     text-align:  center;
     background-color: rgb(139, 18, 18);
-    color: white
+    color: dimgray;
 }
 
 body > header > a > img {
     background-color: rgb(139, 18, 18);
+    color:dimgray;
     transition: .5s;
+
 }
 
 body > header > a > img:hover{
@@ -34,15 +36,16 @@ body > header > a > img:hover{
 body > a > img{
     border-style: dotted;
     border-color: cornsilk;
-    margin-left: 18%;
-    margin-top: 8%;
+    margin-left: 18vw;
+    margin-top: 20vh;
     width: 60%;
-    height: 80%;
-    transition: 1s;
+    height: 75%;
+    transition: .25s;
+    
 }    
     
 body > a > img:hover{
-        transform: scale(1.1);
+        transform: scale(1.02);
         
         
       }
@@ -54,7 +57,11 @@ body > header > a {
     height: 50px;
     top: 10px;
     left: 10px;
-    
+   
+}
+
+.Logo {
+    color:dimgray;
 }
 
 nav {
@@ -64,19 +71,121 @@ nav {
 }
 
 nav > a {
-    color: hsl(0, 96%, 30%);
+    color: rgb(105, 105, 105);
     padding: 5px;
-    background-color: black ;
-    border-radius: 5px;
+    background-color: rgb(139, 18, 18) ;
+    text-decoration: none;
+
+}
+
+nav > a >i{
+    color: dimgray;
+    padding: 5px;
+    background-color: rgb(139, 18, 18) ;
+    text-decoration: none;
 }
 
 
+
+@media only screen and (min-width: 520px) {
+    #ingreso {
+    margin-left: 40%;
+    }
+}
+
+/* Cambio barra navegacion de botones a iconos */
+
+@media only screen and (max-width: 520px){
+        nav > a {
+        font-size: 0 ;
+        background-color: rgb(139, 18, 18) ;
+        }
+    .fas, .far, .fab{
+        font-size: 1rem;
+        line-height: 1rem;
+        color: dimgray;
+        background-color: rgb(139, 18, 18);
+        
+    }
+
+}
+
+/* Formulario Ingreso */
+
+.inusr, .inpwd, .sub {
+    padding: 5px;
+    
+}
+#ingreso {
+    display: flex;
+    width:150px;
+    margin-left: 28%;
+    margin-top: 40vh;
+    justify-content: center;
+    padding: 10px;
+    
+    
+    
+}
+.Cartel:hover{
+    transform: scale(1.05);
+}
+.Cartel{
+    width: 235px;
+    transition: 0.5s;
+    
+
+}
+
+.GridCont{
+    display: grid;
+    margin-top: 20vh;
+    margin-left: 5px;
+
+    
+}
+
+.GriItem1{
+    grid-column-start: 1;
+    grid-column-end: 1;
+}
+
+
+
+.GriItem2{
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+
+
+.GriItem3{
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+
+.GriItem4{
+    grid-column-start: 4;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+.GriItem5{
+    grid-column-start: 5;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
 footer {
+    position:fixed;
     color:white;
     text-align: center;
     background-color: rgb(139, 18, 18);
     padding: 5px;
-    margin: 0px;
+    bottom: 0vh;
     left: 0px;
     right: 0px;
     
